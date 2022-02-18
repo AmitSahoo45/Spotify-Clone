@@ -1,0 +1,25 @@
+.login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.login>img {
+    width: 70%;
+}
+
+.login>a {
+    padding: 1.5rem;
+    background-color: #1DB954;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
