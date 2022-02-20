@@ -5,8 +5,10 @@ import { Avatar } from '@material-ui/core';
 import { useStateValue } from '../../../../StateProvider';
 
 
-const Header = () => {
+const Header = ({ spotify }) => {
     const [{ user }, dispatch] = useStateValue();
+
+    console.log("Nigger => ", spotify);
 
     return (
         <div className="header">

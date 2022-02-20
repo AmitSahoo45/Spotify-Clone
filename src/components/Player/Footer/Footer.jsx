@@ -2,8 +2,11 @@ import React from 'react'
 import './Footer.css'
 import { PlayCircleFilledOutlined, PlaylistPlay, SkipNext, SkipPrevious, Shuffle, Repeat, VolumeDown } from '@material-ui/icons';
 import { Grid, Slider } from '@material-ui/core';
+import { useStateValue } from '../../../StateProvider';
 
-const Footer = () => {
+const Footer = ({ spotify }) => {
+  const [{ token, item, playing }, dispatch] = useStateValue();
+  
   return (
     <div className="footer">
       <div className="footer__left">
